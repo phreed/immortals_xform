@@ -1,0 +1,2539 @@
+[
+    [
+        "00000000-0000-0000-0000-000000000000",
+        {
+            "version": "0.0.1",
+            "guid": "00000000-0000-0000-0000-000000000000",
+            "name": {
+                "name": "_OBJECT",
+                "uriGen": "",
+                "uriPrefix": "",
+                "uriName": "",
+                "uriExt": ""
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "00000000-0000-0000-0000-000000000000",
+                "root": "00000000-0000-0000-0000-000000000000",
+                "base": "00000000-0000-0000-0000-000000000000",
+                "parent": "00000000-0000-0000-0000-000000000000"
+            },
+            "pointers": {},
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "_OBJECT",
+                "guid": "00000000-0000-0000-0000-000000000000"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "03d36072-9e09-7866-cb4e-d0a36ff825f6",
+        {
+            "guid": "03d36072-9e09-7866-cb4e-d0a36ff825f6",
+            "name": {
+                "name": "ROOT"
+            },
+            "type": {
+                "domain": "",
+                "meta": "00000000-0000-0000-0000-000000000000",
+                "root": "00000000-0000-0000-0000-000000000000",
+                "base": "00000000-0000-0000-0000-000000000000",
+                "parent": "00000000-0000-0000-0000-000000000000",
+                "name": "Root"
+            },
+            "pointers": {},
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "_OBJECT",
+                "guid": "00000000-0000-0000-0000-000000000000"
+            },
+            "attributes": {},
+            "children": {
+                "FCO": {
+                    "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045": {
+                        "parent": "03d36072-9e09-7866-cb4e-d0a36ff825f6",
+                        "child": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045"
+                    }
+                },
+                "FeatureModel": {
+                    "3d0217b4-3879-2fa4-0268-0380d43d4a88": {
+                        "parent": "03d36072-9e09-7866-cb4e-d0a36ff825f6",
+                        "child": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045"
+                    }
+                },
+                "Language": {
+                    "2c92d4d8-9bbe-be2a-6d29-9e5a48c4dd16": {
+                        "parent": "03d36072-9e09-7866-cb4e-d0a36ff825f6",
+                        "child": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045"
+                    }
+                }
+            },
+            "prune": 0
+        }
+    ],
+    [
+        "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+        {
+            "guid": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+            "name": {
+                "name": "FCO"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "NULL",
+                "root": "NULL",
+                "base": "NULL",
+                "parent": "03d36072-9e09-7866-cb4e-d0a36ff825f6"
+            },
+            "pointers": {},
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "_OBJECT",
+                "guid": "00000000-0000-0000-0000-000000000000"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+        {
+            "guid": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+            "name": {
+                "name": "ATAK"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "71d628f4-e5fc-f21e-05d6-04f0adde1daa",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "71d628f4-e5fc-f21e-05d6-04f0adde1daa",
+                "parent": "03d36072-9e09-7866-cb4e-d0a36ff825f6"
+            },
+            "pointers": {},
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "71d628f4-e5fc-f21e-05d6-04f0adde1daa"
+            },
+            "attributes": {},
+            "children": {
+                "Feature": {
+                    "7808c846-2d44-c0d8-bcfc-ef5ea3b7246e": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "661dac61-be74-4658-6c30-e5b7143ed156"
+                    },
+                    "db1fecd6-7be5-3106-2b5d-ed38924c2752": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "661dac61-be74-4658-6c30-e5b7143ed156"
+                    },
+                    "aa31213d-cee8-87aa-895f-c399379ed5e1": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "661dac61-be74-4658-6c30-e5b7143ed156"
+                    },
+                    "b3deeaa0-28cc-88b5-a8bf-b19377b2d75c": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "661dac61-be74-4658-6c30-e5b7143ed156"
+                    },
+                    "a278dd0e-ba53-ef18-86b9-1f4d2aa9434e": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "661dac61-be74-4658-6c30-e5b7143ed156"
+                    },
+                    "22f1c348-d8b9-0046-2c44-a24bca962271": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "661dac61-be74-4658-6c30-e5b7143ed156"
+                    },
+                    "19ff7311-b637-daf9-bddc-e65c3e055e74": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "661dac61-be74-4658-6c30-e5b7143ed156"
+                    },
+                    "0acbd435-3a0b-795b-f44b-c6eac090c0f2": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "661dac61-be74-4658-6c30-e5b7143ed156"
+                    },
+                    "08e1f134-7538-8e11-6409-10d1d638c546": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "661dac61-be74-4658-6c30-e5b7143ed156"
+                    },
+                    "3f3f17b8-c6c9-6848-49ae-88a2f3664cb4": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "661dac61-be74-4658-6c30-e5b7143ed156"
+                    },
+                    "efac946b-6a0f-c0bc-afc6-0eaf9e25c976": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "661dac61-be74-4658-6c30-e5b7143ed156"
+                    },
+                    "b6e8705d-559b-cffb-9b10-2848641dc163": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "661dac61-be74-4658-6c30-e5b7143ed156"
+                    },
+                    "be6d9d37-6135-d538-4b7b-dbb37708b436": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "661dac61-be74-4658-6c30-e5b7143ed156"
+                    },
+                    "5d6c648e-61e7-a754-3fce-38071c48f057": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "661dac61-be74-4658-6c30-e5b7143ed156"
+                    },
+                    "5cc9957f-3ccf-400f-cdea-8b827828cc82": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "661dac61-be74-4658-6c30-e5b7143ed156"
+                    },
+                    "395e8f9e-a318-3bfa-7138-de6c406febeb": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "661dac61-be74-4658-6c30-e5b7143ed156"
+                    },
+                    "5e84e066-3df9-c60a-3df7-7008ede4b427": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "661dac61-be74-4658-6c30-e5b7143ed156"
+                    }
+                },
+                "CardinalityTarget": {
+                    "d632bbe8-920d-23d6-fab4-3c8fd5dc8ada": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "c1a9a8be-3e68-10ec-37de-757ae00f7797"
+                    },
+                    "b5e91d1b-76df-59e1-fe23-c2d23f0cc97e": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "c1a9a8be-3e68-10ec-37de-757ae00f7797"
+                    },
+                    "eb3faf72-9233-a183-7caa-14aaca30e22b": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "c1a9a8be-3e68-10ec-37de-757ae00f7797"
+                    },
+                    "f2642419-593f-3eba-0e5e-a6c8a62f1a1e": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "c1a9a8be-3e68-10ec-37de-757ae00f7797"
+                    },
+                    "31f77295-c1c9-67a1-c55c-000a986ca3b4": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "c1a9a8be-3e68-10ec-37de-757ae00f7797"
+                    },
+                    "17f795b9-b8e8-2a06-59af-9b8d2de02146": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "c1a9a8be-3e68-10ec-37de-757ae00f7797"
+                    },
+                    "1a01a345-d0fb-b292-064b-1f4a7c2ebd70": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "c1a9a8be-3e68-10ec-37de-757ae00f7797"
+                    },
+                    "844c99bc-d695-65c4-8f4c-cca750e9546f": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "c1a9a8be-3e68-10ec-37de-757ae00f7797"
+                    },
+                    "4d1f3463-4097-7c7c-97a7-6b6fc5e44c00": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "c1a9a8be-3e68-10ec-37de-757ae00f7797"
+                    },
+                    "26bf2c1c-f0d6-1d86-d7c6-5be8b28daec5": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "c1a9a8be-3e68-10ec-37de-757ae00f7797"
+                    },
+                    "1806834f-ad24-a912-83e8-52947cc54823": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "c1a9a8be-3e68-10ec-37de-757ae00f7797"
+                    },
+                    "fa7d82b4-c68e-7566-9177-9bc9c5e222b2": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "c1a9a8be-3e68-10ec-37de-757ae00f7797"
+                    },
+                    "3769fba8-58af-3bbf-7e96-61d6ef48f1ef": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "c1a9a8be-3e68-10ec-37de-757ae00f7797"
+                    }
+                },
+                "Cardinality": {
+                    "a8bba2da-a22d-ee3e-72cf-c27e8a59d655": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "16dd98d3-b8e4-8d80-23f8-4503e816355f"
+                    },
+                    "f9a571fc-a262-b1fc-6c93-8a2c220fca49": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "16dd98d3-b8e4-8d80-23f8-4503e816355f"
+                    },
+                    "62fc2d7c-df8d-94d6-c3e5-fe8bf64dc6d3": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "16dd98d3-b8e4-8d80-23f8-4503e816355f"
+                    },
+                    "ecc6fca5-d6a6-00b3-226f-b2dd1e106d66": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "16dd98d3-b8e4-8d80-23f8-4503e816355f"
+                    },
+                    "3ec86c6e-1880-6d53-b686-4b3fcd7b9714": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "16dd98d3-b8e4-8d80-23f8-4503e816355f"
+                    }
+                },
+                "CardinalitySource": {
+                    "75740ee0-87d3-596e-9410-f1e23775250a": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "e746c8a0-9690-32e7-c6c7-2d7c5f17bc6a"
+                    },
+                    "4f52526a-fbc2-4b2a-fa10-ad39e3337642": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "e746c8a0-9690-32e7-c6c7-2d7c5f17bc6a"
+                    },
+                    "e6436626-9fed-df0d-e9be-57bf86ebe5a2": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "e746c8a0-9690-32e7-c6c7-2d7c5f17bc6a"
+                    },
+                    "de7840eb-d402-d59b-015f-40e7ceb3edc1": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "e746c8a0-9690-32e7-c6c7-2d7c5f17bc6a"
+                    },
+                    "bc462812-abbf-69e8-0cea-b2fe7d00256e": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "e746c8a0-9690-32e7-c6c7-2d7c5f17bc6a"
+                    }
+                },
+                "Requires": {
+                    "bd258671-49ee-b160-82cc-ee6d5005b512": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "16dd98d3-b8e4-8d80-23f8-4503e816355f"
+                    },
+                    "de95820f-73bb-7eb2-f010-1640cc78e085": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "16dd98d3-b8e4-8d80-23f8-4503e816355f"
+                    },
+                    "e3dc8615-1380-61d9-89a3-752f73cbec03": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "16dd98d3-b8e4-8d80-23f8-4503e816355f"
+                    },
+                    "c105122a-e67a-ffe8-5328-417f09b04b95": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "16dd98d3-b8e4-8d80-23f8-4503e816355f"
+                    },
+                    "eb3ae4f0-81ab-85c0-9bdf-46fe05be5cd9": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "16dd98d3-b8e4-8d80-23f8-4503e816355f"
+                    },
+                    "9df39480-33f8-1c3d-4358-31a1beded3fb": {
+                        "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88",
+                        "child": "16dd98d3-b8e4-8d80-23f8-4503e816355f"
+                    }
+                }
+            },
+            "prune": 0
+        }
+    ],
+    [
+        "2c92d4d8-9bbe-be2a-6d29-9e5a48c4dd16",
+        {
+            "guid": "2c92d4d8-9bbe-be2a-6d29-9e5a48c4dd16",
+            "name": {
+                "name": "Language"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "2c92d4d8-9bbe-be2a-6d29-9e5a48c4dd16",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "parent": "03d36072-9e09-7866-cb4e-d0a36ff825f6"
+            },
+            "pointers": {},
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045"
+            },
+            "attributes": {},
+            "children": {
+                "CardinalitySource": {
+                    "e746c8a0-9690-32e7-c6c7-2d7c5f17bc6a": {
+                        "parent": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                        "child": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045"
+                    }
+                },
+                "Excludes": {
+                    "54d49307-ff20-3197-f71f-3b1c5b66b401": {
+                        "parent": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                        "child": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045"
+                    }
+                },
+                "Cardinality": {
+                    "41f00239-b1dd-56b1-495b-b7bd0066279c": {
+                        "parent": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                        "child": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045"
+                    }
+                },
+                "Requires": {
+                    "79403225-6255-7aec-6bc7-d0c25840b333": {
+                        "parent": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                        "child": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045"
+                    }
+                },
+                "ResourceConsumption": {
+                    "fd111c6a-9ebc-a18e-c103-453b9f7ef63f": {
+                        "parent": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                        "child": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045"
+                    }
+                },
+                "ResourceEffect": {
+                    "0a640192-157a-2772-7b7a-bef3f6eaa985": {
+                        "parent": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                        "child": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045"
+                    }
+                },
+                "Documentation": {
+                    "1fe606f6-5c39-77b1-1b3a-42eabd219b32": {
+                        "parent": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                        "child": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045"
+                    },
+                    "9fb5e56c-d8d3-8873-addc-212e7ba818d0": {
+                        "parent": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                        "child": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045"
+                    }
+                },
+                "ResourceProduction": {
+                    "190e1f1b-4bce-fa90-f69c-7b87145f85e4": {
+                        "parent": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                        "child": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045"
+                    }
+                },
+                "CardinalityTarget": {
+                    "c1a9a8be-3e68-10ec-37de-757ae00f7797": {
+                        "parent": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                        "child": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045"
+                    }
+                },
+                "FeatureModel": {
+                    "71d628f4-e5fc-f21e-05d6-04f0adde1daa": {
+                        "parent": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                        "child": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045"
+                    }
+                },
+                "Feature": {
+                    "661dac61-be74-4658-6c30-e5b7143ed156": {
+                        "parent": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                        "child": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045"
+                    }
+                },
+                "Constraint": {
+                    "16dd98d3-b8e4-8d80-23f8-4503e816355f": {
+                        "parent": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                        "child": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045"
+                    }
+                },
+                "FeatureConstraint": {
+                    "6bb7a7d3-2be8-8370-6f0b-7ceb98703285": {
+                        "parent": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                        "child": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045"
+                    }
+                },
+                "ResourceConstraint": {
+                    "89abf1f6-b301-b76f-0273-31b5518e9910": {
+                        "parent": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                        "child": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045"
+                    }
+                }
+            },
+            "prune": 0
+        }
+    ],
+    [
+        "7808c846-2d44-c0d8-bcfc-ef5ea3b7246e",
+        {
+            "guid": "7808c846-2d44-c0d8-bcfc-ef5ea3b7246e",
+            "name": {
+                "name": "Network"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {},
+            "inv_pointers": {
+                "dst": {
+                    "name": "Feature",
+                    "guid": "c105122a-e67a-ffe8-5328-417f09b04b95"
+                },
+                "src": {
+                    "name": "Feature",
+                    "guid": "e6436626-9fed-df0d-e9be-57bf86ebe5a2"
+                }
+            },
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "661dac61-be74-4658-6c30-e5b7143ed156"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "db1fecd6-7be5-3106-2b5d-ed38924c2752",
+        {
+            "guid": "db1fecd6-7be5-3106-2b5d-ed38924c2752",
+            "name": {
+                "name": "3G"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {},
+            "inv_pointers": {
+                "dst": {
+                    "name": "Feature",
+                    "guid": "844c99bc-d695-65c4-8f4c-cca750e9546f"
+                }
+            },
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "661dac61-be74-4658-6c30-e5b7143ed156"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "aa31213d-cee8-87aa-895f-c399379ed5e1",
+        {
+            "guid": "aa31213d-cee8-87aa-895f-c399379ed5e1",
+            "name": {
+                "name": "Wifi"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {},
+            "inv_pointers": {
+                "dst": {
+                    "name": "Feature",
+                    "guid": "9df39480-33f8-1c3d-4358-31a1beded3fb"
+                }
+            },
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "661dac61-be74-4658-6c30-e5b7143ed156"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "d632bbe8-920d-23d6-fab4-3c8fd5dc8ada",
+        {
+            "guid": "d632bbe8-920d-23d6-fab4-3c8fd5dc8ada",
+            "name": {
+                "name": "CardinalityTarget"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "c1a9a8be-3e68-10ec-37de-757ae00f7797",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "c1a9a8be-3e68-10ec-37de-757ae00f7797",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {
+                "src": {
+                    "name": "Cardinality",
+                    "guid": "62fc2d7c-df8d-94d6-c3e5-fe8bf64dc6d3"
+                },
+                "dst": {
+                    "name": "Feature",
+                    "guid": "0acbd435-3a0b-795b-f44b-c6eac090c0f2"
+                }
+            },
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "c1a9a8be-3e68-10ec-37de-757ae00f7797"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "b5e91d1b-76df-59e1-fe23-c2d23f0cc97e",
+        {
+            "guid": "b5e91d1b-76df-59e1-fe23-c2d23f0cc97e",
+            "name": {
+                "name": "CardinalityTarget"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "c1a9a8be-3e68-10ec-37de-757ae00f7797",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "c1a9a8be-3e68-10ec-37de-757ae00f7797",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {
+                "src": {
+                    "name": "Cardinality",
+                    "guid": "f9a571fc-a262-b1fc-6c93-8a2c220fca49"
+                },
+                "dst": {
+                    "name": "Feature",
+                    "guid": "b6e8705d-559b-cffb-9b10-2848641dc163"
+                }
+            },
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "c1a9a8be-3e68-10ec-37de-757ae00f7797"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "eb3faf72-9233-a183-7caa-14aaca30e22b",
+        {
+            "guid": "eb3faf72-9233-a183-7caa-14aaca30e22b",
+            "name": {
+                "name": "CardinalityTarget"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "c1a9a8be-3e68-10ec-37de-757ae00f7797",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "c1a9a8be-3e68-10ec-37de-757ae00f7797",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {
+                "src": {
+                    "name": "Cardinality",
+                    "guid": "ecc6fca5-d6a6-00b3-226f-b2dd1e106d66"
+                },
+                "dst": {
+                    "name": "Feature",
+                    "guid": "b3deeaa0-28cc-88b5-a8bf-b19377b2d75c"
+                }
+            },
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "c1a9a8be-3e68-10ec-37de-757ae00f7797"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "62fc2d7c-df8d-94d6-c3e5-fe8bf64dc6d3",
+        {
+            "version": "0.0.1",
+            "guid": "62fc2d7c-df8d-94d6-c3e5-fe8bf64dc6d3",
+            "name": {
+                "name": "Cardinality"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "41f00239-b1dd-56b1-495b-b7bd0066279c",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "41f00239-b1dd-56b1-495b-b7bd0066279c",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {},
+            "inv_pointers": {
+                "src": {
+                    "name": "Cardinality",
+                    "guid": "17f795b9-b8e8-2a06-59af-9b8d2de02146"
+                },
+                "dst": {
+                    "name": "Cardinality",
+                    "guid": "4f52526a-fbc2-4b2a-fa10-ad39e3337642"
+                }
+            },
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "41f00239-b1dd-56b1-495b-b7bd0066279c"
+            },
+            "attributes": {
+                "Type": "1..n"
+            },
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "0acbd435-3a0b-795b-f44b-c6eac090c0f2",
+        {
+            "version": "0.0.1",
+            "guid": "0acbd435-3a0b-795b-f44b-c6eac090c0f2",
+            "name": {
+                "name": "GPSLocationProvider"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {},
+            "inv_pointers": {
+                "src": {
+                    "name": "Feature",
+                    "guid": "bc462812-abbf-69e8-0cea-b2fe7d00256e"
+                }
+            },
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "661dac61-be74-4658-6c30-e5b7143ed156"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "f9a571fc-a262-b1fc-6c93-8a2c220fca49",
+        {
+            "version": "0.0.1",
+            "guid": "f9a571fc-a262-b1fc-6c93-8a2c220fca49",
+            "name": {
+                "name": "Cardinality"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "41f00239-b1dd-56b1-495b-b7bd0066279c",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "41f00239-b1dd-56b1-495b-b7bd0066279c",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {},
+            "inv_pointers": {
+                "dst": {
+                    "name": "Cardinality",
+                    "guid": "e6436626-9fed-df0d-e9be-57bf86ebe5a2"
+                },
+                "src": {
+                    "name": "Cardinality",
+                    "guid": "4d1f3463-4097-7c7c-97a7-6b6fc5e44c00"
+                }
+            },
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "41f00239-b1dd-56b1-495b-b7bd0066279c"
+            },
+            "attributes": {
+                "Type": "1..*"
+            },
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "b6e8705d-559b-cffb-9b10-2848641dc163",
+        {
+            "version": "0.0.1",
+            "guid": "b6e8705d-559b-cffb-9b10-2848641dc163",
+            "name": {
+                "name": "TacticalRadio"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {},
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "661dac61-be74-4658-6c30-e5b7143ed156"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "ecc6fca5-d6a6-00b3-226f-b2dd1e106d66",
+        {
+            "version": "0.0.1",
+            "guid": "ecc6fca5-d6a6-00b3-226f-b2dd1e106d66",
+            "name": {
+                "name": "Cardinality"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "41f00239-b1dd-56b1-495b-b7bd0066279c",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "41f00239-b1dd-56b1-495b-b7bd0066279c",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {},
+            "inv_pointers": {
+                "dst": {
+                    "name": "Cardinality",
+                    "guid": "de7840eb-d402-d59b-015f-40e7ceb3edc1"
+                },
+                "src": {
+                    "name": "Cardinality",
+                    "guid": "1806834f-ad24-a912-83e8-52947cc54823"
+                }
+            },
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "41f00239-b1dd-56b1-495b-b7bd0066279c"
+            },
+            "attributes": {
+                "Type": "1..n"
+            },
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "b3deeaa0-28cc-88b5-a8bf-b19377b2d75c",
+        {
+            "version": "0.0.1",
+            "guid": "b3deeaa0-28cc-88b5-a8bf-b19377b2d75c",
+            "name": {
+                "name": "Cellular"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {},
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "661dac61-be74-4658-6c30-e5b7143ed156"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "a8bba2da-a22d-ee3e-72cf-c27e8a59d655",
+        {
+            "guid": "a8bba2da-a22d-ee3e-72cf-c27e8a59d655",
+            "name": {
+                "name": "Cardinality"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "41f00239-b1dd-56b1-495b-b7bd0066279c",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "41f00239-b1dd-56b1-495b-b7bd0066279c",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {},
+            "inv_pointers": {
+                "dst": {
+                    "name": "Cardinality",
+                    "guid": "75740ee0-87d3-596e-9410-f1e23775250a"
+                },
+                "src": {
+                    "name": "Cardinality",
+                    "guid": "31f77295-c1c9-67a1-c55c-000a986ca3b4"
+                }
+            },
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "41f00239-b1dd-56b1-495b-b7bd0066279c"
+            },
+            "attributes": {
+                "Type": "1..1"
+            },
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "75740ee0-87d3-596e-9410-f1e23775250a",
+        {
+            "guid": "75740ee0-87d3-596e-9410-f1e23775250a",
+            "name": {
+                "name": "CardinalitySource"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "e746c8a0-9690-32e7-c6c7-2d7c5f17bc6a",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "e746c8a0-9690-32e7-c6c7-2d7c5f17bc6a",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {
+                "src": {
+                    "name": "Feature",
+                    "guid": "5cc9957f-3ccf-400f-cdea-8b827828cc82"
+                },
+                "dst": {
+                    "name": "Cardinality",
+                    "guid": "a8bba2da-a22d-ee3e-72cf-c27e8a59d655"
+                }
+            },
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "e746c8a0-9690-32e7-c6c7-2d7c5f17bc6a"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "5cc9957f-3ccf-400f-cdea-8b827828cc82",
+        {
+            "version": "0.0.1",
+            "guid": "5cc9957f-3ccf-400f-cdea-8b827828cc82",
+            "name": {
+                "name": "Memory"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {},
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "661dac61-be74-4658-6c30-e5b7143ed156"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "f2642419-593f-3eba-0e5e-a6c8a62f1a1e",
+        {
+            "guid": "f2642419-593f-3eba-0e5e-a6c8a62f1a1e",
+            "name": {
+                "name": "CardinalityTarget"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "c1a9a8be-3e68-10ec-37de-757ae00f7797",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "c1a9a8be-3e68-10ec-37de-757ae00f7797",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {
+                "src": {
+                    "name": "Cardinality",
+                    "guid": "a8bba2da-a22d-ee3e-72cf-c27e8a59d655"
+                },
+                "dst": {
+                    "name": "Feature",
+                    "guid": "5e84e066-3df9-c60a-3df7-7008ede4b427"
+                }
+            },
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "c1a9a8be-3e68-10ec-37de-757ae00f7797"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "31f77295-c1c9-67a1-c55c-000a986ca3b4",
+        {
+            "guid": "31f77295-c1c9-67a1-c55c-000a986ca3b4",
+            "name": {
+                "name": "CardinalityTarget"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "c1a9a8be-3e68-10ec-37de-757ae00f7797",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "c1a9a8be-3e68-10ec-37de-757ae00f7797",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {
+                "src": {
+                    "name": "Cardinality",
+                    "guid": "a8bba2da-a22d-ee3e-72cf-c27e8a59d655"
+                },
+                "dst": {
+                    "name": "Feature",
+                    "guid": "395e8f9e-a318-3bfa-7138-de6c406febeb"
+                }
+            },
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "c1a9a8be-3e68-10ec-37de-757ae00f7797"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "a278dd0e-ba53-ef18-86b9-1f4d2aa9434e",
+        {
+            "guid": "a278dd0e-ba53-ef18-86b9-1f4d2aa9434e",
+            "name": {
+                "name": "ATAK"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {},
+            "inv_pointers": {
+                "src": {
+                    "name": "Feature",
+                    "guid": "e3dc8615-1380-61d9-89a3-752f73cbec03"
+                }
+            },
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "661dac61-be74-4658-6c30-e5b7143ed156"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "5e84e066-3df9-c60a-3df7-7008ede4b427",
+        {
+            "version": "0.0.1",
+            "guid": "5e84e066-3df9-c60a-3df7-7008ede4b427",
+            "name": {
+                "name": "1GB"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {},
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "661dac61-be74-4658-6c30-e5b7143ed156"
+            },
+            "attributes": {},
+            "children": {
+                "ResourceProduction": {
+                    "0d307db5-d5ea-e391-a685-9c10ebd65836": {
+                        "parent": "5e84e066-3df9-c60a-3df7-7008ede4b427",
+                        "child": "0a640192-157a-2772-7b7a-bef3f6eaa985"
+                    }
+                }
+            },
+            "prune": 0
+        }
+    ],
+    [
+        "395e8f9e-a318-3bfa-7138-de6c406febeb",
+        {
+            "version": "0.0.1",
+            "guid": "395e8f9e-a318-3bfa-7138-de6c406febeb",
+            "name": {
+                "name": "2GB"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {},
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "661dac61-be74-4658-6c30-e5b7143ed156"
+            },
+            "attributes": {},
+            "children": {
+                "ResourceProduction": {
+                    "2d2bb534-ce38-2901-ecd9-894f16da57d4": {
+                        "parent": "395e8f9e-a318-3bfa-7138-de6c406febeb",
+                        "child": "0a640192-157a-2772-7b7a-bef3f6eaa985"
+                    }
+                }
+            },
+            "prune": 0
+        }
+    ],
+    [
+        "22f1c348-d8b9-0046-2c44-a24bca962271",
+        {
+            "guid": "22f1c348-d8b9-0046-2c44-a24bca962271",
+            "name": {
+                "name": "LocationProvider"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {},
+            "inv_pointers": {
+                "src": {
+                    "name": "Feature",
+                    "guid": "4f52526a-fbc2-4b2a-fa10-ad39e3337642"
+                },
+                "dst": {
+                    "name": "Feature",
+                    "guid": "de95820f-73bb-7eb2-f010-1640cc78e085"
+                }
+            },
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "661dac61-be74-4658-6c30-e5b7143ed156"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "19ff7311-b637-daf9-bddc-e65c3e055e74",
+        {
+            "guid": "19ff7311-b637-daf9-bddc-e65c3e055e74",
+            "name": {
+                "name": "WifiLocationProvider"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {},
+            "inv_pointers": {
+                "dst": {
+                    "name": "Feature",
+                    "guid": "17f795b9-b8e8-2a06-59af-9b8d2de02146"
+                },
+                "src": {
+                    "name": "Feature",
+                    "guid": "9df39480-33f8-1c3d-4358-31a1beded3fb"
+                }
+            },
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "661dac61-be74-4658-6c30-e5b7143ed156"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "08e1f134-7538-8e11-6409-10d1d638c546",
+        {
+            "guid": "08e1f134-7538-8e11-6409-10d1d638c546",
+            "name": {
+                "name": "GeoLocation"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {},
+            "inv_pointers": {
+                "src": {
+                    "name": "Feature",
+                    "guid": "de7840eb-d402-d59b-015f-40e7ceb3edc1"
+                },
+                "dst": {
+                    "name": "Feature",
+                    "guid": "eb3ae4f0-81ab-85c0-9bdf-46fe05be5cd9"
+                }
+            },
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "661dac61-be74-4658-6c30-e5b7143ed156"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "3f3f17b8-c6c9-6848-49ae-88a2f3664cb4",
+        {
+            "guid": "3f3f17b8-c6c9-6848-49ae-88a2f3664cb4",
+            "name": {
+                "name": "Hardware"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {},
+            "inv_pointers": {
+                "src": {
+                    "name": "Feature",
+                    "guid": "eb3ae4f0-81ab-85c0-9bdf-46fe05be5cd9"
+                },
+                "dst": {
+                    "name": "Feature",
+                    "guid": "e3dc8615-1380-61d9-89a3-752f73cbec03"
+                }
+            },
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "661dac61-be74-4658-6c30-e5b7143ed156"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "efac946b-6a0f-c0bc-afc6-0eaf9e25c976",
+        {
+            "guid": "efac946b-6a0f-c0bc-afc6-0eaf9e25c976",
+            "name": {
+                "name": "LTE"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {},
+            "inv_pointers": {
+                "dst": {
+                    "name": "Feature",
+                    "guid": "4d1f3463-4097-7c7c-97a7-6b6fc5e44c00"
+                }
+            },
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "661dac61-be74-4658-6c30-e5b7143ed156"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "be6d9d37-6135-d538-4b7b-dbb37708b436",
+        {
+            "guid": "be6d9d37-6135-d538-4b7b-dbb37708b436",
+            "name": {
+                "name": "GPS"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {},
+            "inv_pointers": {
+                "dst": {
+                    "name": "Feature",
+                    "guid": "fa7d82b4-c68e-7566-9177-9bc9c5e222b2"
+                }
+            },
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "661dac61-be74-4658-6c30-e5b7143ed156"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "5d6c648e-61e7-a754-3fce-38071c48f057",
+        {
+            "guid": "5d6c648e-61e7-a754-3fce-38071c48f057",
+            "name": {
+                "name": "ExternalGPS"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {},
+            "inv_pointers": {
+                "dst": {
+                    "name": "Feature",
+                    "guid": "3769fba8-58af-3bbf-7e96-61d6ef48f1ef"
+                }
+            },
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "661dac61-be74-4658-6c30-e5b7143ed156"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "17f795b9-b8e8-2a06-59af-9b8d2de02146",
+        {
+            "guid": "17f795b9-b8e8-2a06-59af-9b8d2de02146",
+            "name": {
+                "name": "CardinalityTarget"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "c1a9a8be-3e68-10ec-37de-757ae00f7797",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "c1a9a8be-3e68-10ec-37de-757ae00f7797",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {
+                "src": {
+                    "name": "Cardinality",
+                    "guid": "62fc2d7c-df8d-94d6-c3e5-fe8bf64dc6d3"
+                },
+                "dst": {
+                    "name": "Feature",
+                    "guid": "19ff7311-b637-daf9-bddc-e65c3e055e74"
+                }
+            },
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "c1a9a8be-3e68-10ec-37de-757ae00f7797"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "bd258671-49ee-b160-82cc-ee6d5005b512",
+        {
+            "guid": "bd258671-49ee-b160-82cc-ee6d5005b512",
+            "name": {
+                "name": "Requires"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "79403225-6255-7aec-6bc7-d0c25840b333",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "79403225-6255-7aec-6bc7-d0c25840b333",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {
+                "src": {
+                    "name": "Feature",
+                    "guid": "3f3f17b8-c6c9-6848-49ae-88a2f3664cb4"
+                },
+                "dst": {
+                    "name": "Feature",
+                    "guid": "5cc9957f-3ccf-400f-cdea-8b827828cc82"
+                }
+            },
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "79403225-6255-7aec-6bc7-d0c25840b333"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "4f52526a-fbc2-4b2a-fa10-ad39e3337642",
+        {
+            "guid": "4f52526a-fbc2-4b2a-fa10-ad39e3337642",
+            "name": {
+                "name": "CardinalitySource"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "e746c8a0-9690-32e7-c6c7-2d7c5f17bc6a",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "e746c8a0-9690-32e7-c6c7-2d7c5f17bc6a",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {
+                "src": {
+                    "name": "Feature",
+                    "guid": "22f1c348-d8b9-0046-2c44-a24bca962271"
+                },
+                "dst": {
+                    "name": "Cardinality",
+                    "guid": "62fc2d7c-df8d-94d6-c3e5-fe8bf64dc6d3"
+                }
+            },
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "e746c8a0-9690-32e7-c6c7-2d7c5f17bc6a"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "de95820f-73bb-7eb2-f010-1640cc78e085",
+        {
+            "guid": "de95820f-73bb-7eb2-f010-1640cc78e085",
+            "name": {
+                "name": "Requires"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "79403225-6255-7aec-6bc7-d0c25840b333",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "79403225-6255-7aec-6bc7-d0c25840b333",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {
+                "src": {
+                    "name": "Feature",
+                    "guid": "a278dd0e-ba53-ef18-86b9-1f4d2aa9434e"
+                },
+                "dst": {
+                    "name": "Feature",
+                    "guid": "22f1c348-d8b9-0046-2c44-a24bca962271"
+                }
+            },
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "79403225-6255-7aec-6bc7-d0c25840b333"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "e3dc8615-1380-61d9-89a3-752f73cbec03",
+        {
+            "guid": "e3dc8615-1380-61d9-89a3-752f73cbec03",
+            "name": {
+                "name": "Requires"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "79403225-6255-7aec-6bc7-d0c25840b333",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "79403225-6255-7aec-6bc7-d0c25840b333",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {
+                "src": {
+                    "name": "Feature",
+                    "guid": "a278dd0e-ba53-ef18-86b9-1f4d2aa9434e"
+                },
+                "dst": {
+                    "name": "Feature",
+                    "guid": "3f3f17b8-c6c9-6848-49ae-88a2f3664cb4"
+                }
+            },
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "79403225-6255-7aec-6bc7-d0c25840b333"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "c105122a-e67a-ffe8-5328-417f09b04b95",
+        {
+            "guid": "c105122a-e67a-ffe8-5328-417f09b04b95",
+            "name": {
+                "name": "Requires"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "79403225-6255-7aec-6bc7-d0c25840b333",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "79403225-6255-7aec-6bc7-d0c25840b333",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {
+                "src": {
+                    "name": "Feature",
+                    "guid": "3f3f17b8-c6c9-6848-49ae-88a2f3664cb4"
+                },
+                "dst": {
+                    "name": "Feature",
+                    "guid": "7808c846-2d44-c0d8-bcfc-ef5ea3b7246e"
+                }
+            },
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "79403225-6255-7aec-6bc7-d0c25840b333"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "e6436626-9fed-df0d-e9be-57bf86ebe5a2",
+        {
+            "guid": "e6436626-9fed-df0d-e9be-57bf86ebe5a2",
+            "name": {
+                "name": "CardinalitySource"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "e746c8a0-9690-32e7-c6c7-2d7c5f17bc6a",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "e746c8a0-9690-32e7-c6c7-2d7c5f17bc6a",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {
+                "src": {
+                    "name": "Feature",
+                    "guid": "7808c846-2d44-c0d8-bcfc-ef5ea3b7246e"
+                },
+                "dst": {
+                    "name": "Cardinality",
+                    "guid": "f9a571fc-a262-b1fc-6c93-8a2c220fca49"
+                }
+            },
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "e746c8a0-9690-32e7-c6c7-2d7c5f17bc6a"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "1a01a345-d0fb-b292-064b-1f4a7c2ebd70",
+        {
+            "guid": "1a01a345-d0fb-b292-064b-1f4a7c2ebd70",
+            "name": {
+                "name": "CardinalityTarget"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "c1a9a8be-3e68-10ec-37de-757ae00f7797",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "c1a9a8be-3e68-10ec-37de-757ae00f7797",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {
+                "src": {
+                    "name": "Cardinality",
+                    "guid": "f9a571fc-a262-b1fc-6c93-8a2c220fca49"
+                },
+                "dst": {
+                    "name": "Feature",
+                    "guid": "aa31213d-cee8-87aa-895f-c399379ed5e1"
+                }
+            },
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "c1a9a8be-3e68-10ec-37de-757ae00f7797"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "844c99bc-d695-65c4-8f4c-cca750e9546f",
+        {
+            "guid": "844c99bc-d695-65c4-8f4c-cca750e9546f",
+            "name": {
+                "name": "CardinalityTarget"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "c1a9a8be-3e68-10ec-37de-757ae00f7797",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "c1a9a8be-3e68-10ec-37de-757ae00f7797",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {
+                "src": {
+                    "name": "Cardinality",
+                    "guid": "f9a571fc-a262-b1fc-6c93-8a2c220fca49"
+                },
+                "dst": {
+                    "name": "Feature",
+                    "guid": "db1fecd6-7be5-3106-2b5d-ed38924c2752"
+                }
+            },
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "c1a9a8be-3e68-10ec-37de-757ae00f7797"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "4d1f3463-4097-7c7c-97a7-6b6fc5e44c00",
+        {
+            "guid": "4d1f3463-4097-7c7c-97a7-6b6fc5e44c00",
+            "name": {
+                "name": "CardinalityTarget"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "c1a9a8be-3e68-10ec-37de-757ae00f7797",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "c1a9a8be-3e68-10ec-37de-757ae00f7797",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {
+                "src": {
+                    "name": "Cardinality",
+                    "guid": "f9a571fc-a262-b1fc-6c93-8a2c220fca49"
+                },
+                "dst": {
+                    "name": "Feature",
+                    "guid": "efac946b-6a0f-c0bc-afc6-0eaf9e25c976"
+                }
+            },
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "c1a9a8be-3e68-10ec-37de-757ae00f7797"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "de7840eb-d402-d59b-015f-40e7ceb3edc1",
+        {
+            "guid": "de7840eb-d402-d59b-015f-40e7ceb3edc1",
+            "name": {
+                "name": "CardinalitySource"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "e746c8a0-9690-32e7-c6c7-2d7c5f17bc6a",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "e746c8a0-9690-32e7-c6c7-2d7c5f17bc6a",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {
+                "src": {
+                    "name": "Feature",
+                    "guid": "08e1f134-7538-8e11-6409-10d1d638c546"
+                },
+                "dst": {
+                    "name": "Cardinality",
+                    "guid": "ecc6fca5-d6a6-00b3-226f-b2dd1e106d66"
+                }
+            },
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "e746c8a0-9690-32e7-c6c7-2d7c5f17bc6a"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "26bf2c1c-f0d6-1d86-d7c6-5be8b28daec5",
+        {
+            "guid": "26bf2c1c-f0d6-1d86-d7c6-5be8b28daec5",
+            "name": {
+                "name": "CardinalityTarget"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "c1a9a8be-3e68-10ec-37de-757ae00f7797",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "c1a9a8be-3e68-10ec-37de-757ae00f7797",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {
+                "src": {
+                    "name": "Cardinality",
+                    "guid": "ecc6fca5-d6a6-00b3-226f-b2dd1e106d66"
+                },
+                "dst": {
+                    "name": "Feature",
+                    "guid": "be6d9d37-6135-d538-4b7b-dbb37708b436"
+                }
+            },
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "c1a9a8be-3e68-10ec-37de-757ae00f7797"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "1806834f-ad24-a912-83e8-52947cc54823",
+        {
+            "guid": "1806834f-ad24-a912-83e8-52947cc54823",
+            "name": {
+                "name": "CardinalityTarget"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "c1a9a8be-3e68-10ec-37de-757ae00f7797",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "c1a9a8be-3e68-10ec-37de-757ae00f7797",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {
+                "src": {
+                    "name": "Cardinality",
+                    "guid": "ecc6fca5-d6a6-00b3-226f-b2dd1e106d66"
+                },
+                "dst": {
+                    "name": "Feature",
+                    "guid": "5d6c648e-61e7-a754-3fce-38071c48f057"
+                }
+            },
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "c1a9a8be-3e68-10ec-37de-757ae00f7797"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "eb3ae4f0-81ab-85c0-9bdf-46fe05be5cd9",
+        {
+            "guid": "eb3ae4f0-81ab-85c0-9bdf-46fe05be5cd9",
+            "name": {
+                "name": "Requires"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "79403225-6255-7aec-6bc7-d0c25840b333",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "79403225-6255-7aec-6bc7-d0c25840b333",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {
+                "src": {
+                    "name": "Feature",
+                    "guid": "3f3f17b8-c6c9-6848-49ae-88a2f3664cb4"
+                },
+                "dst": {
+                    "name": "Feature",
+                    "guid": "08e1f134-7538-8e11-6409-10d1d638c546"
+                }
+            },
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "79403225-6255-7aec-6bc7-d0c25840b333"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "9df39480-33f8-1c3d-4358-31a1beded3fb",
+        {
+            "guid": "9df39480-33f8-1c3d-4358-31a1beded3fb",
+            "name": {
+                "name": "Requires"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "79403225-6255-7aec-6bc7-d0c25840b333",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "79403225-6255-7aec-6bc7-d0c25840b333",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {
+                "src": {
+                    "name": "Feature",
+                    "guid": "19ff7311-b637-daf9-bddc-e65c3e055e74"
+                },
+                "dst": {
+                    "name": "Feature",
+                    "guid": "aa31213d-cee8-87aa-895f-c399379ed5e1"
+                }
+            },
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "79403225-6255-7aec-6bc7-d0c25840b333"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "3ec86c6e-1880-6d53-b686-4b3fcd7b9714",
+        {
+            "guid": "3ec86c6e-1880-6d53-b686-4b3fcd7b9714",
+            "name": {
+                "name": "Cardinality"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "41f00239-b1dd-56b1-495b-b7bd0066279c",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "41f00239-b1dd-56b1-495b-b7bd0066279c",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {},
+            "inv_pointers": {
+                "dst": {
+                    "name": "Cardinality",
+                    "guid": "bc462812-abbf-69e8-0cea-b2fe7d00256e"
+                },
+                "src": {
+                    "name": "Cardinality",
+                    "guid": "3769fba8-58af-3bbf-7e96-61d6ef48f1ef"
+                }
+            },
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "41f00239-b1dd-56b1-495b-b7bd0066279c"
+            },
+            "attributes": {
+                "Type": "1..n"
+            },
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "bc462812-abbf-69e8-0cea-b2fe7d00256e",
+        {
+            "guid": "bc462812-abbf-69e8-0cea-b2fe7d00256e",
+            "name": {
+                "name": "CardinalitySource"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "e746c8a0-9690-32e7-c6c7-2d7c5f17bc6a",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "e746c8a0-9690-32e7-c6c7-2d7c5f17bc6a",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {
+                "src": {
+                    "name": "Feature",
+                    "guid": "0acbd435-3a0b-795b-f44b-c6eac090c0f2"
+                },
+                "dst": {
+                    "name": "Cardinality",
+                    "guid": "3ec86c6e-1880-6d53-b686-4b3fcd7b9714"
+                }
+            },
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "e746c8a0-9690-32e7-c6c7-2d7c5f17bc6a"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "fa7d82b4-c68e-7566-9177-9bc9c5e222b2",
+        {
+            "guid": "fa7d82b4-c68e-7566-9177-9bc9c5e222b2",
+            "name": {
+                "name": "CardinalityTarget"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "c1a9a8be-3e68-10ec-37de-757ae00f7797",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "c1a9a8be-3e68-10ec-37de-757ae00f7797",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {
+                "src": {
+                    "name": "Cardinality",
+                    "guid": "3ec86c6e-1880-6d53-b686-4b3fcd7b9714"
+                },
+                "dst": {
+                    "name": "Feature",
+                    "guid": "be6d9d37-6135-d538-4b7b-dbb37708b436"
+                }
+            },
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "c1a9a8be-3e68-10ec-37de-757ae00f7797"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "3769fba8-58af-3bbf-7e96-61d6ef48f1ef",
+        {
+            "guid": "3769fba8-58af-3bbf-7e96-61d6ef48f1ef",
+            "name": {
+                "name": "CardinalityTarget"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "c1a9a8be-3e68-10ec-37de-757ae00f7797",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "c1a9a8be-3e68-10ec-37de-757ae00f7797",
+                "parent": "3d0217b4-3879-2fa4-0268-0380d43d4a88"
+            },
+            "pointers": {
+                "src": {
+                    "name": "Cardinality",
+                    "guid": "3ec86c6e-1880-6d53-b686-4b3fcd7b9714"
+                },
+                "dst": {
+                    "name": "Feature",
+                    "guid": "5d6c648e-61e7-a754-3fce-38071c48f057"
+                }
+            },
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "c1a9a8be-3e68-10ec-37de-757ae00f7797"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "e746c8a0-9690-32e7-c6c7-2d7c5f17bc6a",
+        {
+            "guid": "e746c8a0-9690-32e7-c6c7-2d7c5f17bc6a",
+            "name": {
+                "name": "CardinalitySource"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "e746c8a0-9690-32e7-c6c7-2d7c5f17bc6a",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "parent": "2c92d4d8-9bbe-be2a-6d29-9e5a48c4dd16"
+            },
+            "pointers": {},
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "54d49307-ff20-3197-f71f-3b1c5b66b401",
+        {
+            "guid": "54d49307-ff20-3197-f71f-3b1c5b66b401",
+            "name": {
+                "name": "Excludes"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "54d49307-ff20-3197-f71f-3b1c5b66b401",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "6bb7a7d3-2be8-8370-6f0b-7ceb98703285",
+                "parent": "2c92d4d8-9bbe-be2a-6d29-9e5a48c4dd16"
+            },
+            "pointers": {},
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "6bb7a7d3-2be8-8370-6f0b-7ceb98703285"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "41f00239-b1dd-56b1-495b-b7bd0066279c",
+        {
+            "guid": "41f00239-b1dd-56b1-495b-b7bd0066279c",
+            "name": {
+                "name": "Cardinality"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "41f00239-b1dd-56b1-495b-b7bd0066279c",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "6bb7a7d3-2be8-8370-6f0b-7ceb98703285",
+                "parent": "2c92d4d8-9bbe-be2a-6d29-9e5a48c4dd16"
+            },
+            "pointers": {},
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "6bb7a7d3-2be8-8370-6f0b-7ceb98703285"
+            },
+            "attributes": {
+                "Type": "1..n"
+            },
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "79403225-6255-7aec-6bc7-d0c25840b333",
+        {
+            "guid": "79403225-6255-7aec-6bc7-d0c25840b333",
+            "name": {
+                "name": "Requires"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "79403225-6255-7aec-6bc7-d0c25840b333",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "6bb7a7d3-2be8-8370-6f0b-7ceb98703285",
+                "parent": "2c92d4d8-9bbe-be2a-6d29-9e5a48c4dd16"
+            },
+            "pointers": {},
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "6bb7a7d3-2be8-8370-6f0b-7ceb98703285"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "fd111c6a-9ebc-a18e-c103-453b9f7ef63f",
+        {
+            "guid": "fd111c6a-9ebc-a18e-c103-453b9f7ef63f",
+            "name": {
+                "name": "ResourceConsumption"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "fd111c6a-9ebc-a18e-c103-453b9f7ef63f",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "0a640192-157a-2772-7b7a-bef3f6eaa985",
+                "parent": "2c92d4d8-9bbe-be2a-6d29-9e5a48c4dd16"
+            },
+            "pointers": {},
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "0a640192-157a-2772-7b7a-bef3f6eaa985"
+            },
+            "attributes": {
+                "Amount": 0
+            },
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "0a640192-157a-2772-7b7a-bef3f6eaa985",
+        {
+            "guid": "0a640192-157a-2772-7b7a-bef3f6eaa985",
+            "name": {
+                "name": "ResourceEffect"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "0a640192-157a-2772-7b7a-bef3f6eaa985",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "parent": "2c92d4d8-9bbe-be2a-6d29-9e5a48c4dd16"
+            },
+            "pointers": {},
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045"
+            },
+            "attributes": {
+                "Amount": 0
+            },
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "1fe606f6-5c39-77b1-1b3a-42eabd219b32",
+        {
+            "guid": "1fe606f6-5c39-77b1-1b3a-42eabd219b32",
+            "name": {
+                "name": "Language Folder"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "9fb5e56c-d8d3-8873-addc-212e7ba818d0",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "9fb5e56c-d8d3-8873-addc-212e7ba818d0",
+                "parent": "2c92d4d8-9bbe-be2a-6d29-9e5a48c4dd16"
+            },
+            "pointers": {},
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "9fb5e56c-d8d3-8873-addc-212e7ba818d0"
+            },
+            "attributes": {
+                "documentation": "Here is a good place to store all nodes that are part of the META language. Keep in mind that the FCO cannot be moved.\n\nIn the META-Aspect under the Helper-tab you can see that it has a containment rule for any node (it can contain FCOs)."
+            },
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "9fb5e56c-d8d3-8873-addc-212e7ba818d0",
+        {
+            "guid": "9fb5e56c-d8d3-8873-addc-212e7ba818d0",
+            "name": {
+                "name": "Documentation"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "9fb5e56c-d8d3-8873-addc-212e7ba818d0",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "parent": "2c92d4d8-9bbe-be2a-6d29-9e5a48c4dd16"
+            },
+            "pointers": {},
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045"
+            },
+            "attributes": {
+                "documentation": ""
+            },
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "190e1f1b-4bce-fa90-f69c-7b87145f85e4",
+        {
+            "guid": "190e1f1b-4bce-fa90-f69c-7b87145f85e4",
+            "name": {
+                "name": "ResourceProduction"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "190e1f1b-4bce-fa90-f69c-7b87145f85e4",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "0a640192-157a-2772-7b7a-bef3f6eaa985",
+                "parent": "2c92d4d8-9bbe-be2a-6d29-9e5a48c4dd16"
+            },
+            "pointers": {},
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "0a640192-157a-2772-7b7a-bef3f6eaa985"
+            },
+            "attributes": {
+                "Amount": 0
+            },
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "c1a9a8be-3e68-10ec-37de-757ae00f7797",
+        {
+            "guid": "c1a9a8be-3e68-10ec-37de-757ae00f7797",
+            "name": {
+                "name": "CardinalityTarget"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "c1a9a8be-3e68-10ec-37de-757ae00f7797",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "parent": "2c92d4d8-9bbe-be2a-6d29-9e5a48c4dd16"
+            },
+            "pointers": {},
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "71d628f4-e5fc-f21e-05d6-04f0adde1daa",
+        {
+            "guid": "71d628f4-e5fc-f21e-05d6-04f0adde1daa",
+            "name": {
+                "name": "FeatureModel"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "71d628f4-e5fc-f21e-05d6-04f0adde1daa",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "parent": "2c92d4d8-9bbe-be2a-6d29-9e5a48c4dd16"
+            },
+            "pointers": {},
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "661dac61-be74-4658-6c30-e5b7143ed156",
+        {
+            "guid": "661dac61-be74-4658-6c30-e5b7143ed156",
+            "name": {
+                "name": "Feature"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "661dac61-be74-4658-6c30-e5b7143ed156",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "parent": "2c92d4d8-9bbe-be2a-6d29-9e5a48c4dd16"
+            },
+            "pointers": {},
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "16dd98d3-b8e4-8d80-23f8-4503e816355f",
+        {
+            "guid": "16dd98d3-b8e4-8d80-23f8-4503e816355f",
+            "name": {
+                "name": "Constraint"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "16dd98d3-b8e4-8d80-23f8-4503e816355f",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "parent": "2c92d4d8-9bbe-be2a-6d29-9e5a48c4dd16"
+            },
+            "pointers": {},
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "6bb7a7d3-2be8-8370-6f0b-7ceb98703285",
+        {
+            "guid": "6bb7a7d3-2be8-8370-6f0b-7ceb98703285",
+            "name": {
+                "name": "FeatureConstraint"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "6bb7a7d3-2be8-8370-6f0b-7ceb98703285",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "16dd98d3-b8e4-8d80-23f8-4503e816355f",
+                "parent": "2c92d4d8-9bbe-be2a-6d29-9e5a48c4dd16"
+            },
+            "pointers": {},
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "16dd98d3-b8e4-8d80-23f8-4503e816355f"
+            },
+            "attributes": {},
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "89abf1f6-b301-b76f-0273-31b5518e9910",
+        {
+            "guid": "89abf1f6-b301-b76f-0273-31b5518e9910",
+            "name": {
+                "name": "ResourceConstraint"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "89abf1f6-b301-b76f-0273-31b5518e9910",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "16dd98d3-b8e4-8d80-23f8-4503e816355f",
+                "parent": "2c92d4d8-9bbe-be2a-6d29-9e5a48c4dd16"
+            },
+            "pointers": {},
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "16dd98d3-b8e4-8d80-23f8-4503e816355f"
+            },
+            "attributes": {
+                "Name": ""
+            },
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "2d2bb534-ce38-2901-ecd9-894f16da57d4",
+        {
+            "guid": "2d2bb534-ce38-2901-ecd9-894f16da57d4",
+            "name": {
+                "name": "Memory"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "190e1f1b-4bce-fa90-f69c-7b87145f85e4",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "190e1f1b-4bce-fa90-f69c-7b87145f85e4",
+                "parent": "395e8f9e-a318-3bfa-7138-de6c406febeb"
+            },
+            "pointers": {},
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "190e1f1b-4bce-fa90-f69c-7b87145f85e4"
+            },
+            "attributes": {
+                "Amount": 2048
+            },
+            "children": {},
+            "prune": 0
+        }
+    ],
+    [
+        "0d307db5-d5ea-e391-a685-9c10ebd65836",
+        {
+            "guid": "0d307db5-d5ea-e391-a685-9c10ebd65836",
+            "name": {
+                "name": "Memory"
+            },
+            "type": {
+                "domain": "ROOT",
+                "meta": "190e1f1b-4bce-fa90-f69c-7b87145f85e4",
+                "root": "cd891e7b-e2ea-e929-f6cd-9faf4f1fc045",
+                "base": "190e1f1b-4bce-fa90-f69c-7b87145f85e4",
+                "parent": "5e84e066-3df9-c60a-3df7-7008ede4b427"
+            },
+            "pointers": {},
+            "inv_pointers": {},
+            "sets": {},
+            "inv_sets": {},
+            "base": {
+                "name": "FCO",
+                "guid": "190e1f1b-4bce-fa90-f69c-7b87145f85e4"
+            },
+            "attributes": {
+                "Amount": 1024
+            },
+            "children": {},
+            "prune": 0
+        }
+    ]
+]
