@@ -40,6 +40,29 @@
 
 (defn get-guid [obj] (get obj "guid"))
 
+(defn serialize-feature 
+  [feature]
+  (list 'feature (keyword (get-in (second feature) ["name" "name"]))))
+
+(defn serialize-requires 
+  [requires input-hash]
+  (let [values (second requires)
+        src-guid (get-in values ["pointers" "src" "guid"])
+        tgt-guid (get-in values ["pointers" "dst" "guid"])
+        src (get input-hash src-guid)
+        tgt (get input-hash tgt-guid)
+        src-name (get-in src ["name" "name"])
+        tgt-name (get-in tgt ["name" "name"])]
+    (list 'requires (keyword src-name) 1 1 (keyword tgt-name))))
+  
+(defn get-cards
+  "get the nodes by their type"
+  [input-hash card-guid card-src-guid card-tgt-guid]
+  (second input-hash))
+
+(defn serialize-cardinality 
+  [cards]
+  #(list 'requires (get-in (second requires) ["name" "name"])))
 
 (let [input-hash 
          (->> "./res/immortals_model.json"
@@ -48,12 +71,17 @@
               (into {}))
       feature-guid (get-guid (get-meta-node input-hash "Feature"))
       features (get-nodes-having-ancestor input-hash feature-guid)
+      feature-output (mapv #(serialize-feature %) features)
+
       requires-guid (get-guid (get-meta-node input-hash "Requires"))
       requires (get-nodes-having-ancestor input-hash requires-guid)
+      req-output (mapv #(serialize-requires % input-hash) requires)
+
       card-guid (get-guid (get-meta-node input-hash "Cardinality"))
+      cards (get-nodes-having-ancestor input-hash card-guid)
       card-src-guid (get-guid (get-meta-node input-hash "CardinalitySource"))
       card-tgt-guid (get-guid (get-meta-node input-hash "CardinalityTarget"))
-      feature-output (mapv #(list :feature (get-in (second %) ["name" "name"])) features)
-      requires-output (mapv #(list :requires (get-in (second %) ["name" "name"])) features)]
-  (pp/pprint [feature-output requires-output]))
+      cards (get-cards input-hash card-guid card-src-guid card-tgt-guid)
+      card-output (mapv #(serialize-cardinality %) cards)]
+  (pp/pprint [feature-output req-output card-output]))
    
