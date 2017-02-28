@@ -29,25 +29,30 @@
         type-meta-guid (get-in candidate ["type" "meta"])]
     (if (= candidate-guid type-base-guid)        
       false
-      (has-ancestor input-hash (get input-hash type-base-guid) ancestor-guid))))
+      (if (= type-base-guid ancestor-guid) 
+         true
+         (has-ancestor input-hash (get input-hash type-base-guid) ancestor-guid)))))
   
 (defn get-nodes-having-ancestor
   "get the nodes by their type"
   [input-hash guid]
   (filterv #(has-ancestor input-hash (second %) guid) input-hash))
 
+(defn get-guid [obj] (get obj "guid"))
 
-(let [input-hash (->> "./res/immortals_model.json"
-                   clojure.java.io/reader
-                   json/parse-stream
-                   (into {}))
-      feature-guid (:guid (get-meta-node input-hash "Feature"))
-      features (get-nodes-having-ancestor input-hash feature-guid)
-      requires-guid (:guid (get-meta-node input-hash "Requires"))
-      requires (get-nodes-having-ancestor input-hash requires-guid)
-      card-guid (:guid (get-meta-node input-hash "Cardinality"))
-      card-src-guid (:guid (get-meta-node input-hash "CardinalitySource"))
-      card-tgt-guid (:guid (get-meta-node input-hash "CardinalityTarget"))
-      output (mapv #([:feature (get-in % ["name" "name"])]) features)]
-   (pp/pprint [(get-meta-node input-hash "Feature") feature-guid requires-guid card-guid card-src-guid card-tgt-guid output]))
+
+(let [input-hash 
+         (->> "./res/immortals_model.json"
+              clojure.java.io/reader
+              json/parse-stream
+              (into {}))]
+    feature-guid (get-guid (get-meta-node input-hash "Feature"))
+    features (get-nodes-having-ancestor input-hash feature-guid)
+    requires-guid (get-guid (get-meta-node input-hash "Requires"))
+    requires (get-nodes-having-ancestor input-hash requires-guid)
+    card-guid (get-guid (get-meta-node input-hash "Cardinality"))
+    card-src-guid (get-guid (get-meta-node input-hash "CardinalitySource"))
+    card-tgt-guid (get-guid (get-meta-node input-hash "CardinalityTarget"))
+    output (mapv #(list :feature (get-in (second %) ["name" "name"])) features)
+  (pp/pprint [feature-guid requires-guid card-guid card-src-guid card-tgt-guid output]))
    
