@@ -45,14 +45,15 @@
          (->> "./res/immortals_model.json"
               clojure.java.io/reader
               json/parse-stream
-              (into {}))]
-    feature-guid (get-guid (get-meta-node input-hash "Feature"))
-    features (get-nodes-having-ancestor input-hash feature-guid)
-    requires-guid (get-guid (get-meta-node input-hash "Requires"))
-    requires (get-nodes-having-ancestor input-hash requires-guid)
-    card-guid (get-guid (get-meta-node input-hash "Cardinality"))
-    card-src-guid (get-guid (get-meta-node input-hash "CardinalitySource"))
-    card-tgt-guid (get-guid (get-meta-node input-hash "CardinalityTarget"))
-    output (mapv #(list :feature (get-in (second %) ["name" "name"])) features)
-  (pp/pprint [feature-guid requires-guid card-guid card-src-guid card-tgt-guid output]))
+              (into {}))
+      feature-guid (get-guid (get-meta-node input-hash "Feature"))
+      features (get-nodes-having-ancestor input-hash feature-guid)
+      requires-guid (get-guid (get-meta-node input-hash "Requires"))
+      requires (get-nodes-having-ancestor input-hash requires-guid)
+      card-guid (get-guid (get-meta-node input-hash "Cardinality"))
+      card-src-guid (get-guid (get-meta-node input-hash "CardinalitySource"))
+      card-tgt-guid (get-guid (get-meta-node input-hash "CardinalityTarget"))
+      feature-output (mapv #(list :feature (get-in (second %) ["name" "name"])) features)
+      requires-output (mapv #(list :requires (get-in (second %) ["name" "name"])) features)]
+  (pp/pprint [feature-output requires-output]))
    
