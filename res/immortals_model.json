@@ -459,14 +459,18 @@
             },
             "pointers": {},
             "inv_pointers": {
-                "dst": {
-                    "name": "Feature",
-                    "guid": "c105122a-e67a-ffe8-5328-417f09b04b95"
-                },
-                "src": {
-                    "name": "Feature",
-                    "guid": "e6436626-9fed-df0d-e9be-57bf86ebe5a2"
-                }
+                "dst": [
+                    {
+                        "name": "Feature",
+                        "guid": "c105122a-e67a-ffe8-5328-417f09b04b95"
+                    }
+                ],
+                "src": [
+                    {
+                        "name": "Feature",
+                        "guid": "e6436626-9fed-df0d-e9be-57bf86ebe5a2"
+                    }
+                ]
             },
             "sets": {},
             "inv_sets": {},
@@ -495,10 +499,12 @@
             },
             "pointers": {},
             "inv_pointers": {
-                "dst": {
-                    "name": "Feature",
-                    "guid": "844c99bc-d695-65c4-8f4c-cca750e9546f"
-                }
+                "dst": [
+                    {
+                        "name": "Feature",
+                        "guid": "844c99bc-d695-65c4-8f4c-cca750e9546f"
+                    }
+                ]
             },
             "sets": {},
             "inv_sets": {},
@@ -527,10 +533,16 @@
             },
             "pointers": {},
             "inv_pointers": {
-                "dst": {
-                    "name": "Feature",
-                    "guid": "9df39480-33f8-1c3d-4358-31a1beded3fb"
-                }
+                "dst": [
+                    {
+                        "name": "Feature",
+                        "guid": "1a01a345-d0fb-b292-064b-1f4a7c2ebd70"
+                    },
+                    {
+                        "name": "Feature",
+                        "guid": "9df39480-33f8-1c3d-4358-31a1beded3fb"
+                    }
+                ]
             },
             "sets": {},
             "inv_sets": {},
@@ -668,14 +680,18 @@
             },
             "pointers": {},
             "inv_pointers": {
-                "src": {
-                    "name": "Cardinality",
-                    "guid": "17f795b9-b8e8-2a06-59af-9b8d2de02146"
-                },
-                "dst": {
-                    "name": "Cardinality",
-                    "guid": "4f52526a-fbc2-4b2a-fa10-ad39e3337642"
-                }
+                "src": [
+                    {
+                        "name": "Cardinality",
+                        "guid": "17f795b9-b8e8-2a06-59af-9b8d2de02146"
+                    }
+                ],
+                "dst": [
+                    {
+                        "name": "Cardinality",
+                        "guid": "4f52526a-fbc2-4b2a-fa10-ad39e3337642"
+                    }
+                ]
             },
             "sets": {},
             "inv_sets": {},
@@ -707,10 +723,12 @@
             },
             "pointers": {},
             "inv_pointers": {
-                "src": {
-                    "name": "Feature",
-                    "guid": "bc462812-abbf-69e8-0cea-b2fe7d00256e"
-                }
+                "src": [
+                    {
+                        "name": "Feature",
+                        "guid": "bc462812-abbf-69e8-0cea-b2fe7d00256e"
+                    }
+                ]
             },
             "sets": {},
             "inv_sets": {},
@@ -740,14 +758,26 @@
             },
             "pointers": {},
             "inv_pointers": {
-                "dst": {
-                    "name": "Cardinality",
-                    "guid": "e6436626-9fed-df0d-e9be-57bf86ebe5a2"
-                },
-                "src": {
-                    "name": "Cardinality",
-                    "guid": "4d1f3463-4097-7c7c-97a7-6b6fc5e44c00"
-                }
+                "dst": [
+                    {
+                        "name": "Cardinality",
+                        "guid": "e6436626-9fed-df0d-e9be-57bf86ebe5a2"
+                    }
+                ],
+                "src": [
+                    {
+                        "name": "Cardinality",
+                        "guid": "1a01a345-d0fb-b292-064b-1f4a7c2ebd70"
+                    },
+                    {
+                        "name": "Cardinality",
+                        "guid": "844c99bc-d695-65c4-8f4c-cca750e9546f"
+                    },
+                    {
+                        "name": "Cardinality",
+                        "guid": "4d1f3463-4097-7c7c-97a7-6b6fc5e44c00"
+                    }
+                ]
             },
             "sets": {},
             "inv_sets": {},
@@ -807,14 +837,22 @@
             },
             "pointers": {},
             "inv_pointers": {
-                "dst": {
-                    "name": "Cardinality",
-                    "guid": "de7840eb-d402-d59b-015f-40e7ceb3edc1"
-                },
-                "src": {
-                    "name": "Cardinality",
-                    "guid": "1806834f-ad24-a912-83e8-52947cc54823"
-                }
+                "dst": [
+                    {
+                        "name": "Cardinality",
+                        "guid": "de7840eb-d402-d59b-015f-40e7ceb3edc1"
+                    }
+                ],
+                "src": [
+                    {
+                        "name": "Cardinality",
+                        "guid": "26bf2c1c-f0d6-1d86-d7c6-5be8b28daec5"
+                    },
+                    {
+                        "name": "Cardinality",
+                        "guid": "1806834f-ad24-a912-83e8-52947cc54823"
+                    }
+                ]
             },
             "sets": {},
             "inv_sets": {},
@@ -873,14 +911,22 @@
             },
             "pointers": {},
             "inv_pointers": {
-                "dst": {
-                    "name": "Cardinality",
-                    "guid": "75740ee0-87d3-596e-9410-f1e23775250a"
-                },
-                "src": {
-                    "name": "Cardinality",
-                    "guid": "31f77295-c1c9-67a1-c55c-000a986ca3b4"
-                }
+                "dst": [
+                    {
+                        "name": "Cardinality",
+                        "guid": "75740ee0-87d3-596e-9410-f1e23775250a"
+                    }
+                ],
+                "src": [
+                    {
+                        "name": "Cardinality",
+                        "guid": "f2642419-593f-3eba-0e5e-a6c8a62f1a1e"
+                    },
+                    {
+                        "name": "Cardinality",
+                        "guid": "31f77295-c1c9-67a1-c55c-000a986ca3b4"
+                    }
+                ]
             },
             "sets": {},
             "inv_sets": {},
@@ -1047,10 +1093,16 @@
             },
             "pointers": {},
             "inv_pointers": {
-                "src": {
-                    "name": "Feature",
-                    "guid": "e3dc8615-1380-61d9-89a3-752f73cbec03"
-                }
+                "src": [
+                    {
+                        "name": "Feature",
+                        "guid": "de95820f-73bb-7eb2-f010-1640cc78e085"
+                    },
+                    {
+                        "name": "Feature",
+                        "guid": "e3dc8615-1380-61d9-89a3-752f73cbec03"
+                    }
+                ]
             },
             "sets": {},
             "inv_sets": {},
@@ -1149,14 +1201,18 @@
             },
             "pointers": {},
             "inv_pointers": {
-                "src": {
-                    "name": "Feature",
-                    "guid": "4f52526a-fbc2-4b2a-fa10-ad39e3337642"
-                },
-                "dst": {
-                    "name": "Feature",
-                    "guid": "de95820f-73bb-7eb2-f010-1640cc78e085"
-                }
+                "src": [
+                    {
+                        "name": "Feature",
+                        "guid": "4f52526a-fbc2-4b2a-fa10-ad39e3337642"
+                    }
+                ],
+                "dst": [
+                    {
+                        "name": "Feature",
+                        "guid": "de95820f-73bb-7eb2-f010-1640cc78e085"
+                    }
+                ]
             },
             "sets": {},
             "inv_sets": {},
@@ -1185,14 +1241,18 @@
             },
             "pointers": {},
             "inv_pointers": {
-                "dst": {
-                    "name": "Feature",
-                    "guid": "17f795b9-b8e8-2a06-59af-9b8d2de02146"
-                },
-                "src": {
-                    "name": "Feature",
-                    "guid": "9df39480-33f8-1c3d-4358-31a1beded3fb"
-                }
+                "dst": [
+                    {
+                        "name": "Feature",
+                        "guid": "17f795b9-b8e8-2a06-59af-9b8d2de02146"
+                    }
+                ],
+                "src": [
+                    {
+                        "name": "Feature",
+                        "guid": "9df39480-33f8-1c3d-4358-31a1beded3fb"
+                    }
+                ]
             },
             "sets": {},
             "inv_sets": {},
@@ -1221,14 +1281,18 @@
             },
             "pointers": {},
             "inv_pointers": {
-                "src": {
-                    "name": "Feature",
-                    "guid": "de7840eb-d402-d59b-015f-40e7ceb3edc1"
-                },
-                "dst": {
-                    "name": "Feature",
-                    "guid": "eb3ae4f0-81ab-85c0-9bdf-46fe05be5cd9"
-                }
+                "src": [
+                    {
+                        "name": "Feature",
+                        "guid": "de7840eb-d402-d59b-015f-40e7ceb3edc1"
+                    }
+                ],
+                "dst": [
+                    {
+                        "name": "Feature",
+                        "guid": "eb3ae4f0-81ab-85c0-9bdf-46fe05be5cd9"
+                    }
+                ]
             },
             "sets": {},
             "inv_sets": {},
@@ -1257,14 +1321,26 @@
             },
             "pointers": {},
             "inv_pointers": {
-                "src": {
-                    "name": "Feature",
-                    "guid": "eb3ae4f0-81ab-85c0-9bdf-46fe05be5cd9"
-                },
-                "dst": {
-                    "name": "Feature",
-                    "guid": "e3dc8615-1380-61d9-89a3-752f73cbec03"
-                }
+                "src": [
+                    {
+                        "name": "Feature",
+                        "guid": "bd258671-49ee-b160-82cc-ee6d5005b512"
+                    },
+                    {
+                        "name": "Feature",
+                        "guid": "c105122a-e67a-ffe8-5328-417f09b04b95"
+                    },
+                    {
+                        "name": "Feature",
+                        "guid": "eb3ae4f0-81ab-85c0-9bdf-46fe05be5cd9"
+                    }
+                ],
+                "dst": [
+                    {
+                        "name": "Feature",
+                        "guid": "e3dc8615-1380-61d9-89a3-752f73cbec03"
+                    }
+                ]
             },
             "sets": {},
             "inv_sets": {},
@@ -1293,10 +1369,12 @@
             },
             "pointers": {},
             "inv_pointers": {
-                "dst": {
-                    "name": "Feature",
-                    "guid": "4d1f3463-4097-7c7c-97a7-6b6fc5e44c00"
-                }
+                "dst": [
+                    {
+                        "name": "Feature",
+                        "guid": "4d1f3463-4097-7c7c-97a7-6b6fc5e44c00"
+                    }
+                ]
             },
             "sets": {},
             "inv_sets": {},
@@ -1325,10 +1403,16 @@
             },
             "pointers": {},
             "inv_pointers": {
-                "dst": {
-                    "name": "Feature",
-                    "guid": "fa7d82b4-c68e-7566-9177-9bc9c5e222b2"
-                }
+                "dst": [
+                    {
+                        "name": "Feature",
+                        "guid": "26bf2c1c-f0d6-1d86-d7c6-5be8b28daec5"
+                    },
+                    {
+                        "name": "Feature",
+                        "guid": "fa7d82b4-c68e-7566-9177-9bc9c5e222b2"
+                    }
+                ]
             },
             "sets": {},
             "inv_sets": {},
@@ -1357,10 +1441,16 @@
             },
             "pointers": {},
             "inv_pointers": {
-                "dst": {
-                    "name": "Feature",
-                    "guid": "3769fba8-58af-3bbf-7e96-61d6ef48f1ef"
-                }
+                "dst": [
+                    {
+                        "name": "Feature",
+                        "guid": "1806834f-ad24-a912-83e8-52947cc54823"
+                    },
+                    {
+                        "name": "Feature",
+                        "guid": "3769fba8-58af-3bbf-7e96-61d6ef48f1ef"
+                    }
+                ]
             },
             "sets": {},
             "inv_sets": {},
@@ -1929,14 +2019,22 @@
             },
             "pointers": {},
             "inv_pointers": {
-                "dst": {
-                    "name": "Cardinality",
-                    "guid": "bc462812-abbf-69e8-0cea-b2fe7d00256e"
-                },
-                "src": {
-                    "name": "Cardinality",
-                    "guid": "3769fba8-58af-3bbf-7e96-61d6ef48f1ef"
-                }
+                "dst": [
+                    {
+                        "name": "Cardinality",
+                        "guid": "bc462812-abbf-69e8-0cea-b2fe7d00256e"
+                    }
+                ],
+                "src": [
+                    {
+                        "name": "Cardinality",
+                        "guid": "fa7d82b4-c68e-7566-9177-9bc9c5e222b2"
+                    },
+                    {
+                        "name": "Cardinality",
+                        "guid": "3769fba8-58af-3bbf-7e96-61d6ef48f1ef"
+                    }
+                ]
             },
             "sets": {},
             "inv_sets": {},

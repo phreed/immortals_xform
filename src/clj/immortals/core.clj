@@ -40,48 +40,88 @@
 
 (defn get-guid [obj] (get obj "guid"))
 
+
 (defn serialize-feature 
   [feature]
-  (list 'feature (keyword (get-in (second feature) ["name" "name"]))))
+  (list 'feature (keyword (get-in feature ["name" "name"]))))
 
 (defn serialize-requires 
+  "Write one record for each Requires connection.
+  The Requires meta-node is passed as the first arg."
   [requires input-hash]
-  (let [values (second requires)
-        src-guid (get-in values ["pointers" "src" "guid"])
-        tgt-guid (get-in values ["pointers" "dst" "guid"])
+  (let [src-guid (get-in requires ["pointers" "src" "guid"])
+        tgt-guid (get-in requires ["pointers" "dst" "guid"])
         src (get input-hash src-guid)
         tgt (get input-hash tgt-guid)
         src-name (get-in src ["name" "name"])
         tgt-name (get-in tgt ["name" "name"])]
     (list 'requires (keyword src-name) 1 1 (keyword tgt-name))))
-  
-(defn get-cards
-  "get the nodes by their type"
-  [input-hash card-guid card-src-guid card-tgt-guid]
-  (second input-hash))
+
+(defn cardinality-tuple 
+  "convert a string representing cardinality to a pair.
+  1..n 0..1 0..N 1..*"
+  [str]
+  (let [tuple (re-find #"(?x)  # allow embedded whitespace and comments
+                   (\d)    # the first indicator must be a single digit
+                   \.\.    # there must be two dots
+                   ([\dnN*]) # a digit or an unlimited indicator
+                   " str)]
+      (if tuple 
+        (let 
+            [left (Integer/parseInt (nth tuple 1))
+             right (as-> (nth tuple 2) & 
+                     (case &
+                       ("n" "N" "*") 'N
+                       (Integer/parseInt &)))]
+          [left right]))))
 
 (defn serialize-cardinality 
-  [cards]
-  #(list 'requires (get-in (second requires) ["name" "name"])))
+  "Write one record for each CardinalitySource,
+  The CardinalitySource meta-node is passed as the first arg."
+  [card-src input-hash]
+  (let [feat-name
+          (as-> (get-in card-src ["pointers" "src" "guid"]) &
+                (get input-hash &)
+                (get-in & ["name" "name"])
+                (keyword &))
+        card-guid (get-in card-src ["pointers" "dst" "guid"])
+        card (get input-hash card-guid)
+        [min max] (cardinality-tuple (get-in card ["attributes" "Type"]))
+        card-set-names 
+          (->> (get-in card ["inv_pointers" "src"])
+               (map get-guid)
+               (map #(get input-hash %))
+               (map #(get-in % ["pointers" "dst" "guid"]))
+               (map #(get input-hash %))
+               (mapv #(get-in % ["name" "name"]))
+               (mapv keyword))]
+    (list 'requires feat-name min max card-set-names)))
 
+(defn extract-features
+  [input-hash]
+  (let [feature-guid (get-guid (get-meta-node input-hash "Feature"))
+        features (get-nodes-having-ancestor input-hash feature-guid)]
+      (mapv #(serialize-feature (second %)) features)))
+
+(defn extract-requires 
+  [input-hash]
+  (let [requires-guid (get-guid (get-meta-node input-hash "Requires"))
+        requires (get-nodes-having-ancestor input-hash requires-guid)]
+      (mapv #(serialize-requires (second %) input-hash) requires)))
+
+(defn extract-cards
+  [input-hash]
+  (let [card-src-guid (get-guid (get-meta-node input-hash "CardinalitySource"))
+        card-srcs (get-nodes-having-ancestor input-hash card-src-guid)]
+      (mapv #(serialize-cardinality (second %) input-hash) card-srcs)))
+  
 (let [input-hash 
          (->> "./res/immortals_model.json"
               clojure.java.io/reader
               json/parse-stream
               (into {}))
-      feature-guid (get-guid (get-meta-node input-hash "Feature"))
-      features (get-nodes-having-ancestor input-hash feature-guid)
-      feature-output (mapv #(serialize-feature %) features)
-
-      requires-guid (get-guid (get-meta-node input-hash "Requires"))
-      requires (get-nodes-having-ancestor input-hash requires-guid)
-      req-output (mapv #(serialize-requires % input-hash) requires)
-
-      card-guid (get-guid (get-meta-node input-hash "Cardinality"))
-      cards (get-nodes-having-ancestor input-hash card-guid)
-      card-src-guid (get-guid (get-meta-node input-hash "CardinalitySource"))
-      card-tgt-guid (get-guid (get-meta-node input-hash "CardinalityTarget"))
-      cards (get-cards input-hash card-guid card-src-guid card-tgt-guid)
-      card-output (mapv #(serialize-cardinality %) cards)]
-  (pp/pprint [feature-output req-output card-output]))
+      feature-output (extract-features input-hash)
+      req-output (extract-requires input-hash)
+      card-output (extract-cards input-hash)]
+  (pp/pprint (vec (concat feature-output req-output card-output))))
    
