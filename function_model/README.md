@@ -1,4 +1,7 @@
 
+
+# Purpose
+
 This project involves converting the json input produced from GME into a suitable clojure structure.
 
     [(feature :a)
@@ -13,25 +16,7 @@ This project involves converting the json input produced from GME into a suitabl
      (selected [:a])]
   
 
-Visit those items whose meta-type is 'Feature'.
-
-Get the guid of the meta-node whose name is 'Feature'.
-
-Find all of the nodes which are decendants of 'Feature', these are the features.
-These can be identified in a number of ways.
-Following the type.base..base chains up to the 'Feature' node is probably the best.
-
-
-Visit those items whose meta-type is 'Requires' a connection.
-There is a 'Requires' meta-node.
-
-Find all nodes whose ancestor (follow the 'base') is the requires meta-node.
-These each will be serialized as a (requires) tuple.
-Check the "dst" node for any connected "CardinalitySource" nodes.
-The "CardinalitySource" nodes will have associated "Cardinality" nodes 
-which have "CardinalityTargets" and an attribute "Type" which carries the actual cardinality.ZZ
-
-The model we are using should look like:
+The sample model we are using produces:
 
      [(feature :2GB)
       (feature :Cellular)
@@ -62,3 +47,31 @@ The model we are using should look like:
       (requires :Network 1 N [:Wifi :3G :LTE])
       (requires :Memory 1 1 [:1GB :2GB])]
 
+## Usage
+
+The package has not been placed in one of the maven repositories so you
+will need to build it in your local repository (.m2).
+
+     cd feature_model
+     boot build
+
+## What it does
+
+
+Visit those items whose meta-type is 'Feature'.
+
+Get the guid of the meta-node whose name is 'Feature'.
+
+Find all of the nodes which are decendants of 'Feature', these are the features.
+These can be identified in a number of ways.
+Following the type.base..base chains up to the 'Feature' node is probably the best.
+
+
+Visit those items whose meta-type is 'Requires' a connection.
+There is a 'Requires' meta-node.
+
+Find all nodes whose ancestor (follow the 'base') is the requires meta-node.
+These each will be serialized as a (requires) tuple.
+Check the "dst" node for any connected "CardinalitySource" nodes.
+The "CardinalitySource" nodes will have associated "Cardinality" nodes 
+which have "CardinalityTargets" and an attribute "Type" which carries the actual cardinality.ZZ

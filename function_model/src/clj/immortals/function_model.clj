@@ -1,9 +1,7 @@
 
-(ns immortals.core 
+(ns immortals.function-model 
     "GME produces output via a plugin but working in JavaScript is painful.
-    This manipulates those files to produce what is needed."
-  (:require [cheshire.core :as json]
-            [clojure.pprint :as pp]))  
+    This manipulates those files to produce what is needed.")
 
 (defn is-meta-node 
   "in order to be a meta-node of a particular name"
@@ -114,14 +112,13 @@
   (let [card-src-guid (get-guid (get-meta-node input-hash "CardinalitySource"))
         card-srcs (get-nodes-having-ancestor input-hash card-src-guid)]
       (mapv #(serialize-cardinality (second %) input-hash) card-srcs)))
-  
-(let [input-hash 
-         (->> "./res/immortals_model.json"
-              clojure.java.io/reader
-              json/parse-stream
-              (into {}))
-      feature-output (extract-features input-hash)
-      req-output (extract-requires input-hash)
-      card-output (extract-cards input-hash)]
-  (pp/pprint (vec (concat feature-output req-output card-output))))
-   
+             
+(defn transform
+  "The primary function for performing the transformation"
+  [input-hash]
+  (vec 
+    (concat 
+      (extract-features input-hash) 
+      (extract-requires input-hash)
+      (extract-cards input-hash))))
+ 
