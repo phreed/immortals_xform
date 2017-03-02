@@ -53,7 +53,7 @@
         tgt (get input-hash tgt-guid)
         src-name (get-in src ["name" "name"])
         tgt-name (get-in tgt ["name" "name"])]
-    (list 'requires (keyword src-name) 1 1 (keyword tgt-name))))
+    (list 'requires (keyword src-name) 1 1 [(keyword tgt-name)])))
 
 (defn cardinality-tuple 
   "convert a string representing cardinality to a pair.
@@ -69,7 +69,7 @@
             [left (Integer/parseInt (nth tuple 1))
              right (as-> (nth tuple 2) & 
                      (case &
-                       ("n" "N" "*") 'N
+                       ("n" "N" "*") 5
                        (Integer/parseInt &)))]
           [left right]))))
 
