@@ -20,5 +20,12 @@
       (into {})
       fm/transform))
 
+(dir cure.core)
 
 (def tm (cure/feature-model fm))
+
+(def tm (cure/feature-model 
+          (conj fm '(selected [:ATAK]))))
+
+(cure/configuration tm)
+
