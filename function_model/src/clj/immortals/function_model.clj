@@ -55,25 +55,18 @@
         tgt-name (get-in tgt ["name" "name"])]
     (list 'requires (keyword src-name) 1 1 [(keyword tgt-name)])))
 
-(defn cardinality-tuple 
-  "convert a string representing cardinality to a pair.
-  1..n 0..1 0..N 1..*"
-  [str]
-  (let [tuple (re-find #"(?x)  # allow embedded whitespace and comments
-                   (\d)    # the first indicator must be a single digit
-                   \.\.    # there must be two dots
-                   ([\dnN*]) # a digit or an unlimited indicator
-                   " str)]
-      (if tuple 
-        (let 
-            [left (Integer/parseInt (nth tuple 1))
-             right (as-> (nth tuple 2) & 
-                     (case &
-                       ("n" "N" "*") 5
-                       (Integer/parseInt &)))]
-          [left right]))))
+(defn variation-tuple 
+  "convert a tuple representing variation to a numeric pair.
+  low and high may be strings or numbers."
+  [left right]
+  (let 
+      [low (Integer/parseInt left)
+       high (case right
+                 ("n" "N" "*") 10
+                 (Integer/parseInt right))]
+    [low high]))
 
-(defn serialize-cardinality 
+(defn serialize-variation 
   "Write one record for each CardinalitySource,
   The CardinalitySource meta-node is passed as the first arg."
   [card-src input-hash]
@@ -84,7 +77,8 @@
                 (keyword &))
         card-guid (get-in card-src ["pointers" "dst" "guid"])
         card (get input-hash card-guid)
-        [min max] (cardinality-tuple (get-in card ["attributes" "Type"]))
+        card-attr (get card "attributes")
+        [min max] (variation-tuple (get card-attr "low") (get card-attr "high"))
         card-set-names 
           (->> (get-in card ["inv_pointers" "src"])
                (map get-guid)
@@ -93,7 +87,7 @@
                (map #(get input-hash %))
                (mapv #(get-in % ["name" "name"]))
                (mapv keyword))]
-    (list 'requires feat-name min max card-set-names)))
+    (list 'variation feat-name min max card-set-names)))
 
 (defn extract-features
   [input-hash]
@@ -111,7 +105,7 @@
   [input-hash]
   (let [card-src-guid (get-guid (get-meta-node input-hash "CardinalitySource"))
         card-srcs (get-nodes-having-ancestor input-hash card-src-guid)]
-      (mapv #(serialize-cardinality (second %) input-hash) card-srcs)))
+      (mapv #(serialize-variation (second %) input-hash) card-srcs)))
              
 (defn transform
   "The primary function for performing the transformation"

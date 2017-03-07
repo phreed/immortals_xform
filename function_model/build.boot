@@ -30,17 +30,19 @@
      [adzerk/bootlaces "0.1.13"]
      [org.clojure/tools.logging "0.3.1"]
      [adzerk/boot-logservice "1.2.0"]
-     [ch.qos.logback/logback-classic "1.1.7"]])
+     [ch.qos.logback/logback-classic "1.1.7"]
+     [mvxcvi/puget "1.0.1"]])
 
 (require '[adzerk.boot-logservice :as log-service]
-         '[clojure.tools.logging  :as log])
+         '[clojure.tools.logging  :as log]
+         '[puget.printer :refer [cprint]])
+
 
 (require '[boot.git :refer [last-commit]]
          '[adzerk.bootlaces :refer [bootlaces! build-jar]]
          '[immortals.function-model :as fm]
          '[cure.core :as cure]
-         '[cheshire.core :as json]
-         '[clojure.pprint :as pp])
+         '[cheshire.core :as json])
 
 (alter-var-root #'log/*logger-factory* 
                 (constantly (log-service/make-factory log-config)))
@@ -67,8 +69,8 @@
         :url            "https://github.com/phreed/immortals_xform"
         :scm            {:url "https://github.com/phreed/immortals_xform"}
         :license        {"Eclipse Public License" "http://www.eclipse.org/legal/epl-v10.html"}
-        :developers {"Jules White" ""}
-                    "Fred Eisele" "phreed@gmail.com"})
+        :developers {"Jules White" ""
+                     "Fred Eisele" "phreed@gmail.com"}})
 
 (deftask build
   "Build my project and put it in the local repository."

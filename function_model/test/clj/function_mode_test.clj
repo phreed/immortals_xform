@@ -13,19 +13,24 @@
       fm/transform
       pp/pprint)
 
-(def fm 
-    (->> "./res/immortals_model.json"
-      clojure.java.io/reader
-      json/parse-stream
-      (into {})
-      fm/transform))
-
 (dir cure.core)
 
-(def tm (cure/feature-model fm))
+(defn cpr "print and return value"
+    [x] (cprint x) x)
 
-(def tm (cure/feature-model 
-          (conj fm '(selected [:ATAK]))))
+(def fm0 
+    "a sample feature model: raw clauses"
+    (->> "./res/immortals_model.json"
+       clojure.java.io/reader
+       json/parse-stream
+       (into {})
+       fm/transform
+       cpr))         
 
-(cure/configuration tm)
+(def fm1 "a sample feature model: compiled" (cpr (cure/feature-model fm0)))
+
+(def fm2 "a sample feature model: compiled and ATAK selected" 
+    (cpr (cure/feature-model (conj fm0 '(selected [:ATAK])))))
+
+(cprint (cure/configuration fm2))
 
